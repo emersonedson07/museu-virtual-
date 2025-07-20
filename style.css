@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0c24;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: #0d0c24;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.bits {
+  color: #f7b733;
+}
+
+.realismo {
+  color: #3ec6ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3ec6ff;
+}
+
+.subtitulo {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin: 40px 0;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: 2px solid #3ec6ff;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #3ec6ff;
+  transform: scale(1.05);
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.timeline div {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #1a1a3c;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #3ec6ff;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #1a1a3c;
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .timeline {
+    justify-content: center;
+  }
+}
