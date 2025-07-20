@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dos Bits ao Realismo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="bits">DOS BITS</span> AO <span class="realismo">REALISMO</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#historia">História dos Games</a></li>
+        <li><a href="#linha">Linha do Tempo</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+    <div class="subtitulo">Explore a História dos Videogames</div>
+  </header>
+
+  <main>
+    <section id="historia" class="section">
+      <h2>História dos Games</h2>
+      <div class="buttons">
+        <button>Anos 70</button>
+        <button>Anos 80</button>
+        <button>Anos 90</button>
+        <button>Anos 2000</button>
+        <button>Anos 2010</button>
+        <button>Anos 2020</button>
+      </div>
+    </section>
+
+    <section id="linha" class="section">
+      <h2>Linha do Tempo</h2>
+      <div class="timeline">
+        <div>
+          <div>🕹️</div>
+          <p>Anos 70</p>
+        </div>
+        <div>
+          <div>🎮</div>
+          <p>Anos 90</p>
+        </div>
+        <div>
+          <div>🎮</div>
+          <p>1995</p>
+        </div>
+        <div>
+          <div>🎮</div>
+          <p>2010</p>
+        </div>
+        <div>
+          <div>📺</div>
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="cards" id="timeline-cards">
+        <div class="card" data-type="pixel">
+          <img src="https://via.placeholder.com/150?text=Pixel+Art" alt="Estilo gráfico Pixel Art" />
+          <p>Pixel Art</p>
+        </div>
+        <div class="card" data-type="lowpoly">
+          <img src="https://via.placeholder.com/150?text=Low+Poly" alt="Estilo gráfico Low Poly" />
+          <p>Low Poly</p>
+        </div>
+        <div class="card" data-type="hd">
+          <img src="https://via.placeholder.com/150?text=Alta+Definição" alt="Estilo gráfico em Alta Definição" />
+          <p>Alta Definição</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section">
+      <h2>Galeria</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://via.placeholder.com/150?text=Pixel+Art" alt="Exemplo Pixel Art" />
+          <p>Pixel Art</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150?text=Low+Poly" alt="Exemplo Low Poly" />
+          <p>Low Poly</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150?text=Realismo+Total" alt="Exemplo Realismo Total" />
+          <p>Realismo Total</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <h2>Sobre</h2>
+      <p>Descubra como os gráficos e a jogabilidade dos videogames evoluíram ao longo das décadas.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Dos Bits ao Realismo - Todos os direitos reservados
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.buttons button');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        alert('Você clicou em: ' + button.innerText);
+      });
+    });
+  </script>
+</body>
+</html>
